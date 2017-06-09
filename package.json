@@ -1,28 +1,30 @@
 {
-  "name": "com.aa.appy",
-  "displayName": "APPY",
-  "version": "1.0.0",
-  "description": "Cordova wrapper project",
-  "scripts": {
-	"buildAllIOS": "cordova platform add ios && cordova plugin add cordova-plugin-inappbrowser && cordova build ios"
-  },
-  "author": "APPY",
-  "license": "ISC",
-  "dependencies": {
-    "cordova": "^6.5.0",    
-    "cordova-ios": "^4.4.0",
-    "cordova-plugin-inappbrowser": "^1.7.1"    
-  },
-  "cordova": {
-    "plugins": {
-      "cordova-plugin-whitelist": {},
-      "cordova-plugin-inappbrowser": {},
-      "cordova-plugin-network-information": {},
-      "cordova-plugin-splashscreen":{}
-    },
-    "platforms": [
-      "ios",
-      "android"
-    ]
-  }
+	"name": "com.aa.appy",
+	"displayName": "APPY",
+	"version": "1.0.0",
+	"description": "Cordova wrapper project",
+	"scripts": {
+		"buildAllIOS": "cordova build ios",
+		"initPlatform": "cordova platform add ios",
+		"initPlugin": "cordova plugin add cordova-plugin-inappbrowser"
+	},
+	"author": "APPY",
+	"license": "ISC",
+	"dependencies": {
+		"cordova": "^6.5.0",
+		"cordova-ios": "^4.4.0",
+		"cordova-plugin-inappbrowser": "^1.7.1"
+	},
+	"cordova": {
+		"plugins": {
+			"cordova-plugin-whitelist": {},
+			"cordova-plugin-inappbrowser": {},
+			"cordova-plugin-network-information": {},
+			"cordova-plugin-splashscreen": {}
+		},
+		"platforms": [
+			"ios",
+			"android"
+		]
+	}
 }
